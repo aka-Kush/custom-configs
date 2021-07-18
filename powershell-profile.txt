@@ -1,0 +1,20 @@
+Article - https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh
+
+Command to Run - 
+notepad $PROFILE
+
+Content -
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme Agnoster
+
+function Get-GitStatus { git status }
+New-Alias -Name gits -Value Get-GitStatus
+function Set-GitAdd { git add . }
+New-Alias -Name gita -Value Set-GitAdd
+function Set-GitCommit { git commit -m $args }
+New-Alias -Name gitc -Value Set-GitCommit
+function Set-GitEmptyCommit { git commit -a --allow-empty-message -m " " }
+New-Alias -Name gitec -Value Set-GitEmptyCommit
+function Set-GitPush { git push }
+New-Alias -Name gitp -Value Set-GitPush
