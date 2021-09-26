@@ -18,3 +18,6 @@ function Set-GitEmptyCommit { git commit -a --allow-empty-message -m " " }
 New-Alias -Name gitec -Value Set-GitEmptyCommit
 function Set-GitPush { git push }
 New-Alias -Name gitp -Value Set-GitPush
+
+//get over running script error (admin):
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
