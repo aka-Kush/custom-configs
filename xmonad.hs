@@ -397,7 +397,7 @@ myKeys =
         , ( "M-S-d", spawn "discord")
         , ( "M-S-f", spawn "firefox")
         , ( "M-S-v", spawn "code")
-        -- , ( "M-S-d", spawn "discord")
+        , ( "M-S-p", spawn "pcmanfm")
 
     -- KB_GROUP Useful programs to have a keybinding for launch
         , ("M-<Return>", spawn (myTerminal))
